@@ -50,9 +50,6 @@
           <li>
             <a href="#">Contact</a>
           </li>
-          <li>
-            <a href="#">Analytics</a>
-          </li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -63,7 +60,29 @@
   <!-- Page Content -->
   <div class="container">
 
+    <!-- Small modal -->
+    <button type="button" class="btn btn-primary" id="analytics" data-toggle="modal" data-target=".bs-example-modal-sm">Analytics</button>
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">x</span>
+            </button>
+            <h3>Analytics</h3>
+          </div>
+          <div class="modal-body">
+            <ul id="analytics-info"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <div class="row">
+      <div id="info">
+        <h1>Analytics</h1>
+      </div>
       <!-- Blog Entries Column -->
       <div class="col-md-8">
 
@@ -187,7 +206,7 @@
         <div class="well">
           <h4>Side Widget Well</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
-          <button class="btn btn-success btn-lg btn-block" type="button">Sign Up!</button>
+          <button class="btn btn-success btn-lg btn-block" type="button" id="signup-button">Sign Up!</button>
         </div>
 
       </div>
